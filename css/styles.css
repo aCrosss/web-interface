@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    width: 100%;
+    background-color: #394956;
+    color: azure;
+    margin-bottom: 3px;
+}
+
+header::after{
+    content: "";
+    display: block;
+}
+
+#container{
+    width: 100%;
+}
+
+#left_panel, #midle_panel, #right_panel{
+    display: inline-block;
+    position: relative;
+    height: 97vh;
+}
+
+#left_panel{
+    width: 25%;
+    background-color: #d7eaf2;
+}
+
+#midle_panel{
+    width: 45%;
+    background-color: #e1f5fe;
+}
+
+#right_panel{
+    width: 29%;
+    background-color: #dae5fe;
+}
