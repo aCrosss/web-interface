@@ -5,7 +5,6 @@
 
 header{
     width: 100%;
-    position: fixed;
     background-color: #394956;
     color: azure;
     height: 60px ;
@@ -48,27 +47,36 @@ header::after{
     font-size: 14px;
 }
 #container{
+    display: inline;
+    position: absolute;
+    white-space: nowrap;
+    vertical-align: top;
+    margin-top: 2px;
+    height: 100%;
     width: 100%;
 }
 
-#left_panel, #midle_panel, #right_panel{
+.bblock{
     display: inline-block;
-    position: relative;
-    height: 97vh;
-    margin-top: 60px;
+    
 }
 
 #left_panel{
     width: 25%;
+    height: 100%;
     background-color: #d7eaf2;
 }
 
 #midle_panel{
     width: 45%;
+    height: 100%;
     background-color: #e1f5fe;
 }
 
 #right_panel{
-    width: 29%;
+    margin-left: auto;
+    margin-right: 0em;
+    width: 29.4%;
+    height: 100%;
     background-color: #dae5fe;
 }
