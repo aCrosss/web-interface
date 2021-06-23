@@ -34,7 +34,7 @@ header::after{
 .user{
     flex-flow: row nowrap;
     margin-right:85px;
-    margin-left:65%;
+    margin-left:70%;
     font-size: 14px; 
 }
 .tel li{
@@ -46,37 +46,57 @@ header::after{
     margin-right:0 ;
     font-size: 14px;
 }
+h1 {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 5px;
+    background-color: #444444;
+    padding: 10px;
+    font-size: 22px;
+    color: white;
+}
+table { 
+    margin: 10px auto;
+    border-collapse: collapse;
+    width: 70%;
+    margin-top: 90px;
+ }
+th {
+    border: 1px solid #e1f5fe;
+    background-color: #444444;
+    color: white;
+    font-size: 16px;
+    height: 30px;
+    font-stretch: ultra-condensed;
+ }
+td {
+    border: 1px solid #444444;
+    color: #444444;
+    height: 30px;
+ }
 #container{
-    display: inline;
-    position: absolute;
-    white-space: nowrap;
-    vertical-align: top;
-    margin-top: 2px;
-    height: 100%;
     width: 100%;
+    position: fixed;
 }
 
-.bblock{
+#left_panel, #midle_panel, #right_panel{
     display: inline-block;
-    
+    position: relative;
+    height: 97vh;
 }
 
 #left_panel{
-    width: 25%;
-    height: 100%;
+    width: 20%;
     background-color: #d7eaf2;
 }
 
 #midle_panel{
-    width: 45%;
-    height: 100%;
+    width: 55%;
     background-color: #e1f5fe;
 }
 
 #right_panel{
-    margin-left: auto;
-    margin-right: 0em;
-    width: 29.4%;
-    height: 100%;
+    width: 24%;
     background-color: #dae5fe;
 }
