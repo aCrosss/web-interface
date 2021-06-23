@@ -5,16 +5,48 @@
 
 header{
     width: 100%;
+    position: fixed;
     background-color: #394956;
     color: azure;
+    height: 60px ;
     margin-bottom: 3px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 header::after{
     content: "";
     display: block;
 }
-
+.logo{
+    margin-left: 30px;
+}
+.user a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+.user li{
+    font-style: italic;
+    list-style: none;
+}
+.user{
+    flex-flow: row nowrap;
+    margin-right:85px;
+    margin-left:65%;
+    font-size: 14px; 
+}
+.tel li{
+    color: #7c94b3;
+}
+.tel{
+    flex-flow: row nowrap;
+    list-style: none;
+    margin-right:0 ;
+    font-size: 14px;
+}
 #container{
     width: 100%;
 }
@@ -23,12 +55,12 @@ header::after{
     display: inline-block;
     position: relative;
     height: 97vh;
+    margin-top: 60px;
 }
 
 #left_panel{
     width: 25%;
     background-color: #d7eaf2;
-    padding: 4px;
 }
 
 #midle_panel{
