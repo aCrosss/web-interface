@@ -50,8 +50,11 @@
                 </ul>
             </div>
 
-            <div id="midle_panel">
+            <div id="midle_panel" class="bblock">
                 <h1 align="center">Состояние интерфейсов</h1>
+                <form>
+                  <fieldset>
+                    <legend>Сетевые интерфейсы</legend>
                 <table>
                     <tbody>
                       <tr>
@@ -68,12 +71,17 @@
                       </tr>
                     </tbody>
                   </table>
-                  <table>
+                </fieldset>
+                </form>
+                <form>
+                  <fieldset>
+                    <legend>Последовательные порты</legend>
+                <table>
                     <tbody>
                       <tr>
                         <th align="center">Порт</th>
                         <th align="center">Скорость</th>
-                        <th align="center"> Контроль четности</th>
+                        <th align="center">Контроль четности</th>
                         <th align="center">Количество стоповых бит</th>
                         <th align="center">Терминирующий резистор</th>
                       </tr>
@@ -135,6 +143,8 @@
                       </tr>
                     </tbody>
                   </table>
+                </fieldset>
+              </form>
             </div>
 
             <div id="right_panel">
