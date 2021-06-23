@@ -75,28 +75,45 @@ td {
     color: #444444;
     height: 30px;
  }
+
+
 #container{
+    display: inline;
+    position: absolute;
+    white-space: nowrap;
+    vertical-align: top;
+    margin-top: 2px;
+    height: 87%;
     width: 100%;
     position: fixed;
 }
 
-#left_panel, #midle_panel, #right_panel{
+.bblock{
     display: inline-block;
-    position: relative;
-    height: 97vh;
+    padding: 1%;
 }
 
 #left_panel{
-    width: 20%;
+    vertical-align: top;
+    width: 23%;
+    height: 100%;
     background-color: #d7eaf2;
 }
 
+#nav-menu{
+    list-style-type: none;
+}
+
 #midle_panel{
-    width: 55%;
+    vertical-align: top;
+    width: 43%;
+    height: 100%;
     background-color: #e1f5fe;
 }
 
 #right_panel{
-    width: 24%;
+    vertical-align: top;
+    width: 27.4%;
+    height: 100%;
     background-color: #dae5fe;
 }
