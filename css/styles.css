@@ -56,11 +56,14 @@ h1 {
     font-size: 22px;
     color: white;
 }
+form{
+    margin: 40px auto;
+   width: 70%;
+}
 table { 
     margin: 10px auto;
     border-collapse: collapse;
-    width: 70%;
-    margin-top: 90px;
+    width: 90%;
  }
 th {
     border: 1px solid #e1f5fe;
