@@ -56,23 +56,27 @@ h1 {
     font-size: 22px;
     color: white;
 }
+
 form{
     margin: 40px auto;
    width: 70%;
 }
+
 table { 
     margin: 10px auto;
     border-collapse: collapse;
     width: 90%;
  }
+
 th {
     border: 1px solid #e1f5fe;
     background-color: #444444;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     height: 30px;
     font-stretch: ultra-condensed;
  }
+
 td {
     border: 1px solid #444444;
     color: #444444;
@@ -82,13 +86,12 @@ td {
 
 #container{
     display: inline;
-    position: absolute;
+    position: fixed;
     white-space: nowrap;
     vertical-align: top;
     margin-top: 2px;
     height: 87%;
     width: 100%;
-    position: fixed;
 }
 
 .bblock{
@@ -103,8 +106,9 @@ td {
     background-color: #d7eaf2;
 }
 
-#nav-menu{
+ul{
     list-style-type: none;
+    padding-left: 6%;
 }
 
 #midle_panel{

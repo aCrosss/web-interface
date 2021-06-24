@@ -27,30 +27,41 @@
         </header>
 
         <!--Контейнер для трех нижних панелей-->
-        <div id="container">
-            <div id="left_panel">
         <div id="container" class="wrapper">
             <div id="left_panel" class="bblock">
-                <ul style="list-style-type: none">
+                <ul>
                     <li>Главная</li>
-                    <li>Базовая настройка
+                    <li><details>
+                      <summary>Базовая настройка</summary>
                         <ul>
                             <li>Сетевой интерфейс</li>
                             <li>Последовательный порт</li>
+                            <li>Дискретные I/O и реле</li>
+                            <li>Маршруты</li>
+                            <li>Журналирование</li>
+                            <li>Управление сервисами</li>
                         </ul>
+                    </details>
                     </li>
-                    <li>Чертополошество</li>
-                    <li>Еще один уровень
-                        <ul style="list-style-type: none">
-                            <li>Кек</li>
-                            <li>Кек-2</li>
+                    <li>
+                      <details>
+                      <summary>Сервис</summary>
+                        <ul>
+                            <li>Журнал</li>
+                            <li>Обновление прошивки</li>
+                            <li>Etc</li>
                         </ul>
+                      </details>
                     </li>
+                    <li>Сохранить настройки</li>
+                    <li>Перезапуск</li>
+                    <li>Информация</li>
                 </ul>
             </div>
 
             <div id="midle_panel" class="bblock">
                 <h1 align="center">Состояние интерфейсов</h1>
+
                 <form>
                   <fieldset>
                     <legend>Сетевые интерфейсы</legend>
@@ -72,6 +83,7 @@
                   </table>
                 </fieldset>
                 </form>
+
                 <form>
                   <fieldset>
                     <legend>Последовательные порты</legend>
@@ -80,9 +92,9 @@
                       <tr>
                         <th align="center">Порт</th>
                         <th align="center">Скорость</th>
-                        <th align="center">Контроль четности</th>
-                        <th align="center">Количество стоповых бит</th>
-                        <th align="center">Терминирующий резистор</th>
+                        <th align="center">Контроль<br> четности</th>
+                        <th align="center">Количество<br> стоповых<br> бит</th>
+                        <th align="center">Терминирующий<br> резистор</th>
                       </tr>
                       <tr>
                         <td align="center">1</td>
