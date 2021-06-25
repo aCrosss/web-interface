@@ -81,7 +81,21 @@ td {
     height: 30px;
  }
 
-
+ p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt; /* Размер шрифта в пунктах */
+    text-align: justify;
+    hyphens: auto;
+    white-space: normal;
+    margin-top: 5%;
+    margin-right: 5%;
+    text-indent: 20px;
+    }
+    h2 {
+    margin-top: 10px;
+    margin-bottom: 5%;
+    color: #434343;
+    }
 #container{
     display: inline;
     position: absolute;
