@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text\html; charset=UTF-8" />
+  <title>Веб-интерфейс</title>
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!--Верхняя панель-->
+  <header>
+    <div class="logo">
+      <a href="/">
+        <img src="logo.png" width="50" height="50px" />
+      </a>
+    </div>
+    <div class="user">
+      <a>Вы вошли как admin</a>
+      <li><a href="/exit">Выйти</a></li>
+    </div>
+    <div class="tel">
+      <li><a>Контакты:</a></li>
+      <a>+7(347)223-72-42</a>
+    </div>
+  </header>
+
+  <!--Контейнер для трех нижних панелей-->
+  <div id="container" class="wrapper">
+    <div id="left_panel" class="bblock">
+      <ul>
+        <li><a href=main.html>Главная</a></li>
+        <li>
+          <details>
+            <summary>Базовая настройка</summary>
+            <ul>
+              <li><a href="net-interface.html">Сетевой интерфейс</a></li>
+              <li>Последовательный порт</li>
+              <li>Дискретные I/O и реле</li>
+              <li>Маршруты</li>
+              <li>Журналирование</li>
+              <li>Управление сервисами</li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Сервис</summary>
+            <ul>
+              <li>Журнал</li>
+              <li>Обновление прошивки</li>
+              <li>Etc</li>
+            </ul>
+          </details>
+        </li>
+        <li>Сохранить настройки</li>
+        <li>Перезапуск</li>
+        <li>Информация</li>
+      </ul>
+    </div>
+
+    <div id="midle_panel" class="bblock">
+      <h1 align="center">Состояние интерфейсов</h1>
+
+      <form>
+        <fieldset>
+          <legend>Сетевой интерфейс 1</legend>
+          <table>
+            <tbody>
+              <tr>
+                <th align="center">Интерфейс</th>
+                <th align="center">IP-адрес</th>
+                <th align="center"> Маска подсети</th>
+                <th align="center">Состояние</th>
+              </tr>
+              <tr>
+                <td align="center">1</td>
+                <td align="center">172.22.1.164</td>
+                <td align="center">255.255.252.0</td>
+                <td align="center">вкл.</td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+      </form>
+
+    </div>
+
+    <div id="right_panel" class="bblock">
+
+      <body>
+        <h2 align="center">Справка</h2>
+        <ol>
+          <li>Выберите способ получения адреса (динамически или статически).</li>
+          <li>Если выбран статический способ:</li>
+          <ol>
+            <li>Введите IP-адрес (например, 192.168.1.1).</li>
+            <li>Введите маску подсети (например, 255.255.255.0).</li>
+          </ol>
+          <li>Выберите нужное состояние интерфейса.</li>
+          <li>Если необходимо укажите шлюз по умолчанию.</li>
+          <li>Нажмите "Установить".</li>
+        </ol>
+      </body>
+    </div>
+  </div>
+</body>
+
+</html>

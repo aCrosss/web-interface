@@ -95,11 +95,13 @@ td {
     margin-right: 5%;
     text-indent: 20px;
     }
+    
     h2 {
     margin-top: 10px;
     margin-bottom: 5%;
     color: #434343;
     }
+
 #container{
     display: inline;
     position: fixed;
@@ -127,6 +129,17 @@ ul{
     list-style-type: none;
     padding-left: 6%;
 }
+
+ol {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+    text-align: justify;
+    hyphens: auto;
+    white-space: normal;
+    margin-left: 10%;
+    margin-right: 5%;
+    text-indent: 20px;  
+    }
 
 #midle_panel{
     vertical-align: top;
