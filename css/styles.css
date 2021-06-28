@@ -90,17 +90,19 @@ label{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin: 5% auto;
 }
 input{
     vertical-align: middle;
 }
 button{
+    position: relative;
     width: 15%;
     height: 4%;
     margin-left: 10%;
     margin-top: 0%;
-
+}
+select{
+    width: 30%;
 }
  p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -112,7 +114,10 @@ button{
     margin-right: 5%;
     text-indent: 20px;
     }
-    
+ #dis{
+    position: relative;
+    margin-left: 30%;
+}   
     h2 {
     margin-top: 10px;
     margin-bottom: 5%;
