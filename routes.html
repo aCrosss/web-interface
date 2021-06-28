@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text\html; charset=UTF-8"/>
+        <title>Веб-интерфейс</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    </head> 
+
+    <body>
+        <!--Верхняя панель-->
+        <header>
+            <div class="logo">
+                <a href="/">
+                  <img src="logo.png" width="50" height="50px" />
+                </a>
+              </div>
+              <div class="user">
+                <a>Вы вошли как admin</a>
+                <li><a href="/exit">Выйти</a></li>
+              </div>
+              <div class="tel">
+                <li><a>Контакты:</a></li>
+                <a>+7(347)223-72-42</a>
+              </div>
+        </header>
+
+        <!--Контейнер для трех нижних панелей-->
+        <div id="container" class="wrapper">
+            <div id="left_panel" class="bblock">
+                <ul>
+                    <li><a href=main.html>Главная</a></li>
+                    <li><details>
+                      <summary>Базовая настройка</summary>
+                        <ul>
+                            <li><a href="net-interface.html">Сетевой интерфейс</a></li>
+                            <li>Последовательный порт</li>
+                            <li><a href="discrete.html">Дискретные I/O и реле</a>/<li>
+                            <li><a href="routes.html">Маршруты</a></li>
+                            <li>Журналирование</li>
+                            <li>Управление сервисами</li>
+                        </ul>
+                    </details>
+                    </li>
+                    <li>
+                      <details>
+                      <summary>Сервис</summary>
+                        <ul>
+                            <li>Журнал</li>
+                            <li>Обновление прошивки</li>
+                            <li>Etc</li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li>Сохранить настройки</li>
+                    <li>Перезапуск</li>
+                    <li>Информация</li>
+                </ul>
+            </div>
+
+            <div id="midle_panel" class="bblock">
+                <h1 align="center">Маршруты</h1>
+                <table>
+                    <tbody>
+                      <tr>
+                        <th align="center"></th>
+                        <th align="center">TCP-Порт</th>
+                        <th align="center">Начальный ID</th>
+                        <th align="center">Конечный ID</th>
+                        <th align="center">Смещение</th>
+                        <th align="center">Последовательный порт</th>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                            <input name="routes" type="radio" value="1">
+                        </td>
+                        <td align="center">501</td>
+                        <td align="center">-</td>
+                        <td align="center">-</td>
+                        <td align="center">-</td>
+                        <td align="center">1</td>
+                      </tr>      
+                      <tr>
+                        <td align="center">
+                            <input name="routes" type="radio" value="2">
+                        </td>
+                        <td align="center">502</td>
+                        <td align="center">-</td>
+                        <td align="center">-</td>
+                        <td align="center">-</td>
+                        <td align="center">2</td>
+                      </tr> 
+                      <tr>
+                        <td align="center">
+                            <input name="routes" type="radio" value="3">
+                        </td>
+                        <td align="center">503</td>
+                        <td align="center">1</td>
+                        <td align="center">2</td>
+                        <td align="center">0</td>
+                        <td align="center">3</td>
+                      </tr> 
+                      <tr>
+                        <td align="center">
+                            <input name="routes" type="radio" value="4">
+                        </td>
+                        <td align="center">503</td>
+                        <td align="center">5</td>
+                        <td align="center">7</td>
+                        <td align="center">0</td>
+                        <td align="center">4</td>
+                      </tr> 
+                      <tr>
+                        <td align="center">
+                            <input name="routes" type="radio" value="5">
+                        </td>
+                        <td align="center">503</td>
+                        <td align="center">-</td>
+                        <td align="center">-</td>
+                        <td align="center">-</td>
+                        <td align="center">5</td>
+                      </tr> 
+                      <tr>
+                        <td align="center">
+                            <input name="routes" type="radio" value="6">
+                        </td>
+                        <td align="center">504</td>
+                        <td align="center">1</td>
+                        <td align="center">1</td>
+                        <td align="center">2</td>
+                        <td align="center">6</td>
+                      </tr> 
+                      <tr>
+                        <td align="center">
+                            <input name="routes" type="radio" value="7">
+                        </td>
+                        <td align="center">504</td>
+                        <td align="center">6</td>
+                        <td align="center">6</td>
+                        <td align="center">-3</td>
+                        <td align="center">7</td>
+                      </tr> 
+                    </tbody>
+                  </table>
+                  <label><button><a href="routes2.html"> Добавить</a></button>
+                  <button>Удалить</button>
+                  <button>Редактировать</button></label>
+            </div>
+
+            <div id="right_panel" class="bblock">
+              <body>
+                <h2 align="center">Справка</h2>
+                <p>Чтобы добавить новый маршрут нажмите кнопку "Добавить". </p>
+                <p>Чтобы удалить маршрут выберите маршрут, который нужно удалить и нажмите кнопку "Удалить". </p>
+                <p>Чтобы изменить маршрут выберите маршрут, который нужно изменить и нажмите кнопку "Редактировать". </p>
+                </body>
+            </div>
+        </div>
+    </body>
+
+</html>
