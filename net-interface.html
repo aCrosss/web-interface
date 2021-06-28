@@ -66,25 +66,21 @@
       <form>
         <fieldset>
           <legend>Сетевой интерфейс 1</legend>
-          <table>
-            <tbody>
-              <tr>
-                <th align="center">Интерфейс</th>
-                <th align="center">IP-адрес</th>
-                <th align="center"> Маска подсети</th>
-                <th align="center">Состояние</th>
-              </tr>
-              <tr>
-                <td align="center">1</td>
-                <td align="center">172.22.1.164</td>
-                <td align="center">255.255.252.0</td>
-                <td align="center">вкл.</td>
-              </tr>
-            </tbody>
-          </table>
+          <p> <label> Получить IP-адрес
+    <input name="IP" type="radio" value="dinamic"> динамически
+    <input name="IP" type="radio" value="static"> статически</label></p>
+    <p> <label> Адрес
+      <input name="adress" type="text" value="172.22.1.164" disabled></label></p>
+      <p> <label> Маска
+        <input name="mask" type="text" value="255.255.252.0" disabled></label></p>
+    <p> <label> Состояние
+      <input name="status" type="radio" value="on"> вкл.
+      <input name="status" type="radio" value="off"> выкл.</label></p>
         </fieldset>
       </form>
-
+      <p> <label> Шлюз по умолчанию
+        <input name="lock" type="text" value="172.22.1.1"></label></p>
+        <button>Установить</button>
     </div>
 
     <div id="right_panel" class="bblock">
