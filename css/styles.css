@@ -68,6 +68,7 @@ table {
     margin: 5% auto;
     width: 80%;
  }
+
 th {
     border: 1px solid #e1f5fe;
     background-color: #444444;
@@ -83,7 +84,24 @@ td {
     color: #444444;
     height: 30px;
  }
+label{
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin: 5% auto;
+}
+input{
+    vertical-align: middle;
+}
+button{
+    width: 15%;
+    height: 4%;
+    margin-left: 10%;
+    margin-top: 0%;
 
+}
  p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10pt; /* Размер шрифта в пунктах */
