@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text\html; charset=UTF-8" />
+  <title>Веб-интерфейс</title>
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!--Верхняя панель-->
+  <header>
+    <div class="logo">
+      <a href="/">
+        <img src="logo.png" width="50" height="50px" />
+      </a>
+    </div>
+    <div class="user">
+      <a>Вы вошли как admin</a>
+      <li><a href="/exit">Выйти</a></li>
+    </div>
+    <div class="tel">
+      <li><a>Контакты:</a></li>
+      <a>+7(347)223-72-42</a>
+    </div>
+  </header>
+
+  <!--Контейнер для трех нижних панелей-->
+  <div id="container" class="wrapper">
+    <div id="left_panel" class="bblock">
+      <ul>
+        <li><a href=main.html>Главная</a></li>
+        <li>
+          <details>
+            <summary>Базовая настройка</summary>
+            <ul>
+              <li><a href="net-interface.html">Сетевой интерфейс</a></li>
+              <li>Последовательный порт</li>
+              <li><a href="discrete.html">Дискретные I/O и реле</a>/<li>
+              <li><a href="routes.html">Маршруты</a></li>
+              <li><a href="logging.html"> Журналирование</a></li>
+              <li><a href="managing.html"> Управление сервисами</a></li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Сервис</summary>
+            <ul>
+              <li>Журнал</li>
+              <li>Обновление прошивки</li>
+              <li>Etc</li>
+            </ul>
+          </details>
+        </li>
+        <li>Сохранить настройки</li>
+        <li>Перезапуск</li>
+        <li>Информация</li>
+      </ul>
+    </div>
+
+    <div id="midle_panel" class="bblock">
+        <h1 align="center">Журналирование</h1>
+        <form>
+        <fieldset>
+        <legend>Настройка хранения журнала на удаленном сервере</legend>
+        <p> <label> Состояние
+        <input name="status" type="radio" value="on"> вкл.
+        <input name="status" type="radio" value="off"> выкл.</label></p>
+        <p> <label> Приоритет
+        <select>
+        <option value="1">warnings</option>
+        <option value="2">changes</option>
+        </select></label></p>
+        <p> <label> Тип сообщение
+        <input type="checkbox" name="a" value="kern">kern</label></p>
+        <p> <label><input type="checkbox" name="a" value="user"> user</label></p>
+        <p><label><input type="checkbox" name="a" value="daemon"> daemon</label></p>
+        <p><label><input type="checkbox" name="a" value="auth"> auth</label></p>
+        <p><label><input type="checkbox" name="a" value="ftp"> ftp</label></p>
+        <p> <label> Адрес сервера
+        <input name="adress" type="text" value="127.0.0.1" ></label></p>
+        <p> <label> Порт
+        <input type="number" size="3" name="num" min="1" max="65535" value="512"></label></p>
+        <p> <label>Протокол
+        <select>
+        <option value="1">tcp</option>
+        <option value="2">ftp</option>
+        <option value="3">http</option>
+        <option value="2">wap</option>
+        </select> </label></p>
+        </fieldset>
+        </form>
+        <p> <label> Размер локального журнала
+        <input type="number" size="3" name="num" min="1" max="1024" value="1024"></label></p>
+        <button>Установить</button>
+        </div>
+        
+        <div id="right_panel" class="bblock">
+        <body>
+        <h2 align="center">Справка</h2>
+        <p>Выберите порт, настройки которого нужно изменить или посмотреть.</p>
+        <p>Чтобы изменить настройки порта:</p>
+        <ol >
+        <li>Включит или выключите отправку журнала на удаленный сервер.</li>
+        <li>Если вы включили отправку журнала на удаленный сервер:
+        <ol>
+        <li>Выберите приоритет.</li>
+        <li>Выберите тип сообщения.</li>
+        <li>Укажите адрес сервера.</li>
+        <li>Укажите порт (1-65535).</li>
+        <li>Выберите протокол.</li>
+        </ol>
+        </li>
+        <li>Укажите размер журнала в килобайтах (1-1024).</li>
+        <li>Нажмите "Установить".</li>
+        
+        </ol>
+        </body>
+        </div>
+  </div>
+</body>
+
+</html>
