@@ -61,46 +61,24 @@
     </div>
 
     <div id="midle_panel" class="bblock">
-      <h1 align="center">Состояние интерфейсов</h1>
-
-      <form>
-        <fieldset>
-          <legend>Сетевой интерфейс 1</legend>
-          <p> <label> Получить IP-адрес
-    <input name="IP" type="radio" value="dinamic"> динамически
-    <input name="IP" type="radio" value="static"> статически</label></p>
-    <p> <label> Адрес
-      <input name="adress" type="text" value="172.22.1.164" disabled></label></p>
-      <p> <label> Маска
-        <input name="mask" type="text" value="255.255.252.0" disabled></label></p>
-    <p> <label> Состояние
-      <input name="status" type="radio" value="on"> вкл.
-      <input name="status" type="radio" value="off"> выкл.</label></p>
-        </fieldset>
-      </form>
-      <p> <label> Шлюз по умолчанию
-        <input name="lock" type="text" value="172.22.1.1"></label></p>
-        <p><div align="center">
-        <button>Установить</button></div></p>
-    </div>
-
-    <div id="right_panel" class="bblock">
-
-      <body>
+        <h1 align="center">Управление сервисами</h1>
+        <p id="dis"><input type="checkbox" name="a" value="SSH"> SSH</p>
+        <p id="dis"><input type="checkbox" name="a" value="Журналирование"> журналирование</p>
+        <p id="dis"><input type="checkbox" name="a" value="SNMP"> SNMP</p>
+        <p> <button id="dis" >Установить</button></p>
+        </div>
+        
+        <div id="right_panel" class="bblock">
+        
+        <body>
         <h2 align="center">Справка</h2>
+        <p>Чтобы включить или выключить нужный вам сервис:</p>
         <ol>
-          <li>Выберите способ получения адреса (динамически или статически).</li>
-          <li>Если выбран статический способ:</li>
-          <ol>
-            <li>Введите IP-адрес (например, 192.168.1.1).</li>
-            <li>Введите маску подсети (например, 255.255.255.0).</li>
-          </ol>
-          <li>Выберите нужное состояние интерфейса.</li>
-          <li>Если необходимо укажите шлюз по умолчанию.</li>
-          <li>Нажмите "Установить".</li>
+        <li>Установите переключатель в требуемое положение.</li>
+        <li>Нажмите "Установить".</li>
         </ol>
-      </body>
-    </div>
+        </body>
+        </div>
   </div>
 </body>
 
