@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text\html; charset=UTF-8" />
+  <title>Веб-интерфейс</title>
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!--Верхняя панель-->
+  <header>
+    <div class="logo">
+      <a>
+        <img src="logo.png" width="50" height="50px" />
+      </a>
+    </div>
+    <div class="user">
+      <a>Вы вошли как admin</a>
+      <li><a href="/exit">Выйти</a></li>
+    </div>
+    <div class="tel">
+      <li><a>Контакты:</a></li>
+      <a>+7(347)223-72-42</a>
+    </div>
+  </header>
+
+  <!--Контейнер для трех нижних панелей-->
+  <div id="container" class="wrapper">
+    <div id="left_panel" class="bblock">
+      <ul>
+        <li><a href=main.html>Главная</a></li>
+        <li>
+          <details>
+            <summary>Базовая настройка</summary>
+            <ul>
+              <li><a href="net-interface.html">Сетевой интерфейс</a></li>
+              <li><a href="serial port.html"> Последовательный порт</a></li>
+              <li><a href="discrete.html">Дискретные I/O и реле</a>/<li>
+              <li><a href="routes.html">Маршруты</a></li>
+              <li><a href="logging.html"> Журналирование</a></li>
+              <li><a href="managing.html"> Управление сервисами</a></li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Сервис</summary>
+            <ul>
+              <li><a href="log.html"> Журнал</a></li>
+              <li><a href="firmware update.html"> Обновление прошивки</a></li>
+              <li><a href="import.html"> Импорт конфигурации</a></li>
+              <li><a href="export.html"> Экспорт конфигурации</a></li>
+              <li><a href="factory configuration.html"> Заводская конфигурация</a></li>
+              <li><a href="password.html"> Изменение пароля</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a href="saving settings.html"> Сохранить настройки</a></li>
+        <li><a href="restart.html"> Перезапуск</a></li>
+        <li><a href="information.html"> Информация</a></li>
+      </ul>
+    </div>
+
+    <div id="midle_panel" class="bblock">
+      <h1 align="center">Последовательные порты RS-485</h1>
+<p>Выберите последовательный порт:
+<select>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+</select></p>
+<form>
+<fieldset>
+<legend>Последовательный порт 1</legend>
+<p>Скорость порта
+<select>
+<option value="1">9600</option>
+<option value="2">9000</option>
+<option value="3">9500</option>
+</select></p>
+<p>Режим контроля четности
+<select>
+<option value="1">да</option>
+<option value="2">нет</option>
+
+</select></p>
+<p>Количество стоповых бит
+<select>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+</select></p>
+<p>Состояние терминирующего резистора
+<select>
+<option value="1">Отключен</option>
+<option value="2">Включен</option>
+</select></p>
+<p>TCP-порт
+<input type="number" size="3" name="num" min="1" max="65535" value="1"></p>
+<p>Время ожидания ответа
+<input type="number" size="3" name="num" min="1" max="10000" value="1"></p>
+</fieldset>
+</form>
+<button>Установить</button>
+</div>
+
+<div id="right_panel" class="bblock">
+<body>
+<h2 align="center">Справка</h2>
+<p>Выберите порт, настройки которого нужно изменить или посмотреть.</p>
+<p>Чтобы изменить настройки порта:</p>
+<ol >
+<li>Выберите скорость порта.</li>
+<li>Выберите режим контроля четности.</li>
+<li>Выберите количество стоповых бит.</li>
+<li>Выберите состояние терминирующего резистора.</li>
+<li>Укажите TCP-порт, на который будут посылаться Modbus TCP запросы для данного интерфейса RS-485 (1-65535).</li>
+<li>Укажите время ожидания ответа в миллисекундах (1-10000).</li>
+<li>Нажмите "Установить".</li>
+</ol>
+</body>
+  </div>
+</body>
+</html>
