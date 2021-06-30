@@ -48,8 +48,8 @@
           <details>
             <summary>Сервис</summary>
             <ul>
-                <li><a href="log.html"> Журнал</a></li>
-                <li><a href="firmware update.html"> Обновление прошивки</a></li>
+              <li><a href="log.html"> Журнал</a></li>
+              <li><a href="firmware update.html"> Обновление прошивки</a></li>
               <li>Etc</li>
             </ul>
           </details>
@@ -61,24 +61,20 @@
     </div>
 
     <div id="midle_panel" class="bblock">
-        <h1 align="center">Управление сервисами</h1>
-        <p id="dis"><input type="checkbox" name="a" value="SSH"> SSH</p>
-        <p id="dis"><input type="checkbox" name="a" value="Журналирование"> журналирование</p>
-        <p id="dis"><input type="checkbox" name="a" value="SNMP"> SNMP</p>
-        <p> <button id="dis" >Установить</button></p>
-        </div>
-        
-        <div id="right_panel" class="bblock">
-        
-        <body>
+      <h1 align="center">Журнал</h1>
+    <label>Количество последних записей
+      <input name="input" type="text"><button>Изменить</button></label>
+        <textarea></textarea> 
+    </div>
+
+    <div id="right_panel" class="bblock">
+
+      <body>
         <h2 align="center">Справка</h2>
-        <p>Чтобы включить или выключить нужный вам сервис:</p>
-        <ol>
-        <li>Установите переключатель в требуемое положение.</li>
-        <li>Нажмите "Установить".</li>
-        </ol>
-        </body>
-        </div>
+        
+        <p>По умолчанию отображает 100 последних записей из журнала событий.</p>
+          <p>Если вы хотите изменить количество последних отображаемых записей, введите в поле для ввода нужное вам количество записей и нажмите кнопку "Изменить". </p>
+    </div>
   </div>
 </body>
 
