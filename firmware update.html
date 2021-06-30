@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text\html; charset=UTF-8" />
+  <title>Веб-интерфейс</title>
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!--Верхняя панель-->
+  <header>
+    <div class="logo">
+      <a>
+        <img src="logo.png" width="50" height="50px" />
+      </a>
+    </div>
+    <div class="user">
+      <a>Вы вошли как admin</a>
+      <li><a href="/exit">Выйти</a></li>
+    </div>
+    <div class="tel">
+      <li><a>Контакты:</a></li>
+      <a>+7(347)223-72-42</a>
+    </div>
+  </header>
+
+  <!--Контейнер для трех нижних панелей-->
+  <div id="container" class="wrapper">
+    <div id="left_panel" class="bblock">
+      <ul>
+        <li><a href=main.html>Главная</a></li>
+        <li>
+          <details>
+            <summary>Базовая настройка</summary>
+            <ul>
+              <li><a href="net-interface.html">Сетевой интерфейс</a></li>
+              <li><a href="serial port.html"> Последовательный порт</a></li>
+              <li><a href="discrete.html">Дискретные I/O и реле</a>/<li>
+              <li><a href="routes.html">Маршруты</a></li>
+              <li><a href="logging.html"> Журналирование</a></li>
+              <li><a href="managing.html"> Управление сервисами</a></li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Сервис</summary>
+            <ul>
+              <li><a href="log.html"> Журнал</a></li>
+              <li><a href="firmware update.html"> Обновление прошивки</a></li>
+              <li><a href="import.html"> Импорт конфигурации</a></li>
+              <li><a href="export.html"> Экспорт конфигурации</a></li>
+              <li><a href="factory configuration.html"> Заводская конфигурация</a></li>
+              <li><a href="password.html"> Изменение пароля</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a href="saving settings.html"> Сохранить настройки</a></li>
+        <li><a href="restart.html"> Перезапуск</a></li>
+        <li><a href="information.html"> Информация</a></li>
+      </ul>
+    </div>
+
+    <div id="midle_panel" class="bblock">
+      <h1 align="center">Обновление прошивки</h1>
+    <label>Файл:
+      <button >Выберите файл</button> файл не выбран</label>
+      <label><button>Обновить</button></label>
+    </div>
+
+    <div id="right_panel" class="bblock">
+
+      <body>
+        <h2 align="center">Справка</h2>
+        <ol>
+            <li>Выберите файл обновления.</li>
+            <li>Нажмите "Обновить".</li></ol>
+        <p>Появится сообщение "Идет обновление, пожалуйста подождите". После чего необходимо подождать несколько
+            минут до тех пор пока не появится новое сообщение. Если все прошло хорошо, сообщение будет следующим:
+            "Обновление прошивки успешно выполнено. Перезагрузитесь". После  чего необходимо перезапустить конвертер, чтобы
+            новая прошивка заработала. Если что-то пошло не так появится сообщение: "Обновление прошивки выполнить не удалось".
+        </p>
+    </div>
+  </div>
+</body>
+
+</html>
