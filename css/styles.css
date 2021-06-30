@@ -93,6 +93,7 @@ label{
     text-align: center;
     margin-top: 5%;
 }
+
 textarea{
     resize: none;
     width: 80%;
@@ -116,24 +117,15 @@ button{
     margin-top: 0%;
 }
 
-select{
-    width: 30%;
-}
-
  p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 10pt; /* Размер шрифта в пунктах */
     text-align: justify;
     hyphens: auto;
     white-space: normal;
     margin-top: 5%;
     margin-right: 5%;
     text-indent: 20px;
-    }
- #dis{
-    position: relative;
-    margin-left: 30%;
-}   
+    }  
+
     h2 {
     margin-top: 10px;
     margin-bottom: 5%;
@@ -198,15 +190,29 @@ ol {
 }
 
 .box{
-    width: 430;
-    margin: 0 auto;
-    margin-top: 1%;
-    display: inline-block;
+    margin-top: 4%;
     clear: both;
+    text-align: right;
 }
 
-.box label{
-    text-align: right;
-    margin-left: auto;
-    margin-right: auto;
+.checkboxgroup{
+    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
+
+.box select, .box input, .box button, .box label{
+    margin-left: auto;
+    margin-right: 30%;
+    box-sizing: border-box;
+    width: 20%;
+}
+
+#dis{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt; /* Размер шрифта в пунктах */
+    box-sizing: border-box;
+    width: 20%;
+} 
