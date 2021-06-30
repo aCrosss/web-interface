@@ -64,68 +64,83 @@
     </div>
 
     <div id="midle_panel" class="bblock">
-        <h1 align="center">Журналирование</h1>
-        <form>
+      <h1 align="center">Журналирование</h1>
+      <form>
         <fieldset>
-        <legend>Настройка хранения журнала на удаленном сервере</legend>
-        <div class="box"> <label> Состояние
-        <input name="status" type="radio" value="on"> вкл.
-        <input name="status" type="radio" value="off"> выкл.</label></p>
-        </div> <br>
+          <legend>Настройка хранения журнала на удаленном сервере</legend>
+          <div class="box"> <label> Состояние
+              <input name="status" type="radio" value="on"> вкл.
+              <input name="status" type="radio" value="off"> выкл.</label></p>
+          </div> <br>
 
-        <div class="box"> 
-        <label> Приоритет
-        <select>
-        <option value="1">warnings</option>
-        <option value="2">changes</option>
-        </select></label>
-        </div> <br>
-        <p> <label> Тип сообщение
-        <input type="checkbox" name="a" value="kern">kern</label></p>
-        <p> <label><input type="checkbox" name="a" value="user"> user</label></p>
-        <p><label><input type="checkbox" name="a" value="daemon"> daemon</label></p>
-        <p><label><input type="checkbox" name="a" value="auth"> auth</label></p>
-        <p><label><input type="checkbox" name="a" value="ftp"> ftp</label></p>
-        <p> <label> Адрес сервера
-        <input name="adress" type="text" value="127.0.0.1" ></label></p>
-        <p> <label> Порт
-        <input type="number" size="3" name="num" min="1" max="65535" value="512"></label></p>
-        <p> <label>Протокол
-        <select>
-        <option value="1">tcp</option>
-        <option value="2">ftp</option>
-        <option value="3">http</option>
-        <option value="2">wap</option>
-        </select> </label></p>
+          <div class="box">
+            <label> Приоритет
+              <select>
+                <option value="1">warnings</option>
+                <option value="2">changes</option>
+              </select></label>
+          </div>
+
+          <ul>
+            <li class="checkbox-group">
+              <label> Тип сообщения</label>
+              <input type="checkbox" name="a" value="kern"><label>kern</label>
+            </li>
+            <li class="checkbox-group">
+              <input type="checkbox" name="a" value="user"><label>user</label>
+            </li>
+            <li class="checkbox-group">
+              <input type="checkbox" name="a" value="daemon"><label>daemon</label>
+            </li>
+            <li class="checkbox-group">
+              <input type="checkbox" name="a" value="auth"> <label>auth</label>
+            </li>
+            <li class="checkbox-group">
+              <input type="checkbox" name="a" value="ftp"> <label>ftp</label>
+            </li>
+          </ul>
+
+          <p> <label> Адрес сервера
+              <input name="adress" type="text" value="127.0.0.1"></label></p>
+          <p> <label> Порт
+              <input type="number" size="3" name="num" min="1" max="65535" value="512"></label></p>
+          <p> <label>Протокол
+              <select>
+                <option value="1">tcp</option>
+                <option value="2">ftp</option>
+                <option value="3">http</option>
+                <option value="2">wap</option>
+              </select> </label></p>
         </fieldset>
-        </form>
-        <p> <label> Размер локального журнала
-        <input type="number" size="3" name="num" min="1" max="1024" value="1024"></label></p>
-        <button>Установить</button>
-        </div>
-        
-        <div id="right_panel" class="bblock">
-        <body>
+      </form>
+      <p> <label> Размер локального журнала
+          <input type="number" size="3" name="num" min="1" max="1024" value="1024"></label></p>
+      <button>Установить</button>
+    </div>
+
+    <div id="right_panel" class="bblock">
+
+      <body>
         <h2 align="center">Справка</h2>
         <p>Выберите порт, настройки которого нужно изменить или посмотреть.</p>
         <p>Чтобы изменить настройки порта:</p>
-        <ol >
-        <li>Включит или выключите отправку журнала на удаленный сервер.</li>
-        <li>Если вы включили отправку журнала на удаленный сервер:
         <ol>
-        <li>Выберите приоритет.</li>
-        <li>Выберите тип сообщения.</li>
-        <li>Укажите адрес сервера.</li>
-        <li>Укажите порт (1-65535).</li>
-        <li>Выберите протокол.</li>
+          <li>Включит или выключите отправку журнала на удаленный сервер.</li>
+          <li>Если вы включили отправку журнала на удаленный сервер:
+            <ol>
+              <li>Выберите приоритет.</li>
+              <li>Выберите тип сообщения.</li>
+              <li>Укажите адрес сервера.</li>
+              <li>Укажите порт (1-65535).</li>
+              <li>Выберите протокол.</li>
+            </ol>
+          </li>
+          <li>Укажите размер журнала в килобайтах (1-1024).</li>
+          <li>Нажмите "Установить".</li>
+
         </ol>
-        </li>
-        <li>Укажите размер журнала в килобайтах (1-1024).</li>
-        <li>Нажмите "Установить".</li>
-        
-        </ol>
-        </body>
-        </div>
+      </body>
+    </div>
   </div>
 </body>
 

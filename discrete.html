@@ -65,19 +65,26 @@
 
     <div id="midle_panel" class="bblock">
       <h1 align="center">Дискретные I/O и реле</h1>
-    <p id="dis">Дискретный вход
-      <input name="input" type="text" value="Высокий" disabled></p>
-      <p id="dis"> Дискретный выход 
-        <select>
-            <option>Низкий</option>
-            <option>Высокий</option>
-          </select></p>
-        <p id="dis" >Выход реле
-            <select>
-                <option>Разомкнуто</option>
-                <option>Замкнуто</option>
-              </select></p>
-       <p> <button id="dis" >Установить</button></p>
+      
+      <div class="box">Дискретный вход
+        <input  id = "dis" name="input" type="text" value="Высокий" disabled>
+      </div>
+
+      <div class="box"> Дискретный выход
+        <select  id = "dis">
+          <option>Низкий</option>
+          <option>Высокий</option>
+        </select>
+      </div>
+
+      <div class="box">Выход реле
+        <select  id = "dis" >
+          <option>Разомкнуто</option>
+          <option>Замкнуто</option>
+        </select>
+      </div>
+
+      <div class="box"> <button >Установить</button></div>
     </div>
 
     <div id="right_panel" class="bblock">
@@ -87,10 +94,10 @@
         <p>Поле дискретного входа только отображает свое текущее состояние.</p>
         <p>Чтобы изменить состояние дискретного выхода и положения реле:</p>
         <ol>
-            <li>Выберите уровень дискретного выхода.</li>
-            <li>Выберите положение реле.</li>
-            <li>Нажмите "Установить".</li>
-          </ol>
+          <li>Выберите уровень дискретного выхода.</li>
+          <li>Выберите положение реле.</li>
+          <li>Нажмите "Установить".</li>
+        </ol>
       </body>
     </div>
   </div>
