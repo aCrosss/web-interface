@@ -84,6 +84,7 @@ td {
     color: #444444;
     height: 30px;
  }
+
 label{
     display: block;
     position: relative;
@@ -91,17 +92,23 @@ label{
     margin-right: auto;
     text-align: center;
 }
+
 input{
     vertical-align: middle;
 }
+
 button{
     position: relative;
     width: 15%;
     height: 4%;
+    margin-left: 10%;
+    margin-top: 0%;
 }
+
 select{
     width: 30%;
 }
+
  p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10pt; /* Размер шрифта в пунктах */
@@ -156,10 +163,9 @@ ol {
     text-align: justify;
     hyphens: auto;
     white-space: normal;
-    margin-left: 6.5%;
+    margin-left: 10%;
     margin-right: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%; 
+    text-indent: 20px;  
     }
 
 #midle_panel{
@@ -174,4 +180,22 @@ ol {
     width: 27.4%;
     height: 100%;
     background-color: #dae5fe;
+}
+
+.choose{
+    vertical-align: middle;
+}
+
+.box{
+    width: 430;
+    margin: 0 auto;
+    margin-top: 1%;
+    display: inline-block;
+    clear: both;
+}
+
+.box label{
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
 }
