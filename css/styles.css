@@ -1,8 +1,12 @@
+@media screen and (min-width: 860px) {
 *{
     margin: 0px;
     padding: 0px;
 }
-
+a{ 
+    text-decoration:none;
+color: black;
+}
 header{
     width: 100%;
     background-color: #394956;
@@ -20,7 +24,7 @@ header::after{
     display: block;
 }
 .logo{
-    margin-left: 30px;
+    margin-left: 3%;
 }
 .user a{
     list-style: none;
@@ -33,18 +37,25 @@ header::after{
 }
 .user{
     flex-flow: row nowrap;
-    margin-right:85px;
-    margin-left:70%;
-    font-size: 14px; 
+    margin-right:1%;
+    width: 25%;
+    margin-left: 70%;
+    font-size: 14px;
+    position: relative; 
 }
-.tel li{
+.tel li a{
     color: #7c94b3;
+}
+.tel a{
+    color:white;
 }
 .tel{
     flex-flow: row nowrap;
     list-style: none;
-    margin-right:0 ;
+    margin-right:1% ;
     font-size: 14px;
+    width: 20%;
+    margin-left: 2%;
 }
 h1 {
     margin-top: 20px;
@@ -117,12 +128,15 @@ button{
 }
 
  p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
     text-align: justify;
     hyphens: auto;
     white-space: normal;
     margin-top: 5%;
     margin-right: 5%;
     text-indent: 20px;
+    line-height: normal;
     }  
 
     h2 {
@@ -190,6 +204,7 @@ ol {
 
 .box{
     margin-top: 4%;
+    margin-bottom: 2%;
     clear: both;
     text-align: right;
 }
@@ -215,3 +230,56 @@ ol {
     box-sizing: border-box;
     width: 20%;
 } 
+.iw-modal {
+    opacity: 0; /*изначально этот блок должен быть прозрачным*/ 
+    background: rgba(0,0,0,0.7); /*задаём цвет фона*/
+    pointer-events: none; /*делаем чтобы по элементу нельзя было кликнуть когда он прозрачный*/
+    position: fixed; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    transition: all 0.5s ease;
+    margin: 0;
+    padding: 0;
+    }
+    .iw-modal:target {
+    opacity: 1; /*при клике блок становится видимым*/
+    pointer-events: auto; /*теперь по блоку можно кликать мышкой*/
+    overflow-y: auto; /*прокрутка по вертикли страницы*/
+    }
+    .iw-modal-wrapper {
+    margin:auto; /*выравниваем модальное окно по центру по горизонтали*/
+    margin-top:25vh; /*отступ сверху можно задавать в px, % или vh*/
+    }
+    /*CSS-свойства для блока, содержащего контент модального окна */ 
+    .iw-CSS-modal-inner {
+    position: relative;
+    background: #dae5fe; /*цвет фона*/
+    border: 1px solid #ccc; /*цвет и толщина рамки*/
+    border-radius: 0px; /*радиус скругления углов*/
+    }
+    /*CSS-свойства заголовка модального окна */
+    .iw-modal-header {
+    padding: 15px;/*внутренний отступ*/
+    background:#dae5fe;/*цвет фона*/
+    position:relative;
+    }
+    .iw-modal-title {
+    font-size: 18px; /*размер шрифта*/
+    color:#555; /*цвет шрифта*/
+    font-weight:bold; /*жирность шрифта*/
+    line-height: 1.5; /*высота строки*/
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+    /*CSS для блока с текстом*/
+    .iw-modal-text {
+    padding: 15px 20px; /*внутренний отступ*/
+    }
+    /**MEDIA**/
+    @media (min-width: 750px) {
+    .iw-modal-wrapper {
+    max-width: 700px;
+    }}}
