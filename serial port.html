@@ -65,45 +65,51 @@
 
     <div id="midle_panel" class="bblock">
       <h1 align="center">Последовательные порты RS-485</h1>
-<p>Выберите последовательный порт:
-<select>
+
+<div class="box">Выберите последовательный порт:
+<select id = "dis">
 <option value="1">1</option>
 <option value="2">2</option>
 <option value="3">3</option>
-</select></p>
+</select></div>
+
 <form>
 <fieldset>
 <legend>Последовательный порт 1</legend>
-<p>Скорость порта
-<select>
+<div class="box">Скорость порта
+<select id = "dis" >
 <option value="1">9600</option>
 <option value="2">9000</option>
 <option value="3">9500</option>
-</select></p>
-<p>Режим контроля четности
-<select>
+</select></div>
+
+<div class="box">Режим контроля четности
+<select id = "dis">
 <option value="1">да</option>
 <option value="2">нет</option>
+</select></div>
 
-</select></p>
-<p>Количество стоповых бит
-<select>
+<div class="box">Количество стоповых бит
+<select id = "dis">
 <option value="1">1</option>
 <option value="2">2</option>
 <option value="3">3</option>
-</select></p>
-<p>Состояние терминирующего резистора
-<select>
+</select></div>
+
+<div class="box">Состояние терминирующего резистора
+<select id = "dis">
 <option value="1">Отключен</option>
 <option value="2">Включен</option>
-</select></p>
-<p>TCP-порт
-<input type="number" size="3" name="num" min="1" max="65535" value="1"></p>
-<p>Время ожидания ответа
-<input type="number" size="3" name="num" min="1" max="10000" value="1"></p>
+</select></div>
+
+<div class="box">TCP-порт
+<input  id = "dis"type="text"  value="501"></div>
+<div class="box">Время ожидания ответа
+<input  id = "dis"type="text"  value="500"></div>
 </fieldset>
 </form>
-<button>Установить</button>
+
+<div class="box"><button>Установить</button></div>
 </div>
 
 <div id="right_panel" class="bblock">
