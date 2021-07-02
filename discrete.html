@@ -6,6 +6,18 @@
   <meta http-equiv="Content-Type" content="text\html; charset=UTF-8" />
   <title>Веб-интерфейс</title>
   <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript">
+    function shineLinks(id){
+    try{
+    var el=document.getElementById(id).getElementsByTagName('a');//ищем наш div в <span class="caps">DOM</span>
+    var url=document.location.href;//палим текущий урл
+    for(var i=0;i<el.length; i++){
+    if (url==el[i].href){
+    el[i].className = 'active_menu';//если урл==текущий, добавляем класс
+    };
+    };
+    }catch(e){}
+    };</script>
 </head>
 
 <body>
@@ -29,6 +41,7 @@
   <!--Контейнер для трех нижних панелей-->
   <div id="container" class="wrapper">
     <div id="left_panel" class="bblock">
+      <div id="menu">
       <ul>
         <li><a href=main.html>Главная</a></li>
         <li>
@@ -37,7 +50,7 @@
             <ul>
               <li><a href="net-interface.html">Сетевой интерфейс</a></li>
               <li><a href="serial port.html"> Последовательный порт</a></li>
-              <li><a href="discrete.html">Дискретные I/O и реле</a>/<li>
+              <li><a href="discrete.html">Дискретные I/O и реле</a><li>
               <li><a href="routes.html">Маршруты</a></li>
               <li><a href="logging.html"> Журналирование</a></li>
               <li><a href="managing.html"> Управление сервисами</a></li>
@@ -60,7 +73,7 @@
         <li><a href="saving settings.html"> Сохранить настройки</a></li>
         <li><a href="restart.html"> Перезапуск</a></li>
         <li><a href="information.html"> Информация</a></li>
-      </ul>
+      </ul></div>
     </div>
 
     <div id="midle_panel" class="bblock">
@@ -101,6 +114,7 @@
       </body>
     </div>
   </div>
+  <script type="text/javascript">shineLinks('menu');</script>
 </body>
 
 </html>
