@@ -292,6 +292,5 @@ ol {
     #menu ul li a:hover, #menu ul li .active_menu {
         color: white;
         background: #444444 ;
-        text-align: center;
         height: 20%;
     }}
