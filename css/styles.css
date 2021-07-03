@@ -323,4 +323,38 @@ ol {
         color: white;
         background: #444444 ;
         height: 20%;
-    }}
+    }
+    .flex-inner {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        flex-direction: column;
+        margin-left: 44%;
+        margin-right: auto;
+    }  
+    .flex-inner1 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        flex-direction: column;
+        margin-left: 30.5%;
+        margin-right: 2px;
+    }  
+    .flex-inner2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        flex-direction: column;
+        margin-left: 20.5%;
+        margin-right: 2px;
+    }  
+    .flex-inner li {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+      }
+    }
