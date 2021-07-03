@@ -82,16 +82,16 @@
       <form>
         <fieldset>
           <legend>Сетевой интерфейс 1</legend>
-          <p> <label> Получить IP-адрес
+          <ul class="flex-inner2">
+            <li>Получить IP-адрес
     <input name="IP" type="radio" value="dinamic"> динамически
-    <input name="IP" type="radio" value="static"> статически</label></p>
-    <p> <label> Адрес
-      <input name="adress" type="text" value="172.22.1.164" disabled></label></p>
-      <p> <label> Маска
-        <input name="mask" type="text" value="255.255.252.0" disabled></label></p>
-    <p> <label> Состояние
-      <input name="status" type="radio" value="on"> вкл.
-      <input name="status" type="radio" value="off"> выкл.</label></p>
+    <input name="IP" type="radio" value="static"> статически</li></ul>
+    <div class="box"> Адрес
+      <input id="dis" name="adress" type="text" value="172.22.1.164" disabled></div>
+      <div class="box"> Маска
+        <input id="dis" name="mask" type="text" value="255.255.252.0" disabled></div>
+    <ul class="flex-inner1"> <li>Состояние<em> </em><input name="status" type="radio" value="on"> вкл.
+      <input name="status" type="radio" value="off"> выкл.</li></ul>
         </fieldset>
       </form>
       <div class="box"> Шлюз по умолчанию
