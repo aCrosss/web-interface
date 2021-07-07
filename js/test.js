@@ -1,26 +1,27 @@
-window.onload = function(){
+var text = document.querySelector("#textLog")
 
-    var button = document.getElementsByName("change");
-    var text = document.getElementById("textLog");
+try{
+var socket = new WebSocket("ws://127.0.0.1:8000");
+}
+catch(err){
+    
+}
 
-    var socket = new WebSocket("ws://127.0.0.1:1111");
+socket.onopen = function(event){
+    console.log("Connected to server!");
+}
 
-    socket.onerror = function(error){
-        console.log("Error: " + error);
-    }
+socket.onmessage = function(event){
+    console.log("Recieved a message!");
+    var message = event.data;
+    text.value = message;
+}
 
-    socket.onopen = function(event){
-        console.log("Connected to server!");
-    }
+socket.onerror = function(event){
+    console.error(event);
+}
 
-    button.onclick = function(){
-        console.log("Should send message by now");
-        socket.send("send_log");
-    }
-
-    socket.onmessage = function(event){
-        console.log("Recieved a message!");
-        var message = event.data;
-        text.text = message;
-    }
+function sendMessage(){
+    console.log("Should send message by now");
+    socket.send("send_log");
 }
