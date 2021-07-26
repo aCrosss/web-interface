@@ -21,59 +21,12 @@
 </head>
 
 <body>
-  <!--Верхняя панель-->
-  <header>
-    <div class="logo">
-      <a>
-        <img src="logo.png" width="50" height="50px" />
-      </a>
-    </div>
-    <div class="user">
-      <a>Вы вошли как admin</a>
-      <li><a href="/exit">Выйти</a></li>
-    </div>
-    <div class="tel">
-      <li><a>Контакты:</a></li>
-      <a>+7(347)223-72-42</a>
-    </div>
-  </header>
+<?php require "blocks/header.php" ?>
 
   <!--Контейнер для трех нижних панелей-->
   <div id="container" class="wrapper">
     <div id="left_panel" class="bblock">
-      <div id="menu">
-      <ul>
-        <li><a href=main.html>Главная</a></li>
-        <li>
-          <details open>
-            <summary>Базовая настройка</summary>
-            <ul>
-              <li><a href="net-interface.html">Сетевой интерфейс</a></li>
-              <li><a href="serial port.html"> Последовательный порт</a></li>
-              <li><a href="discrete.html">Дискретные I/O и реле</a><li>
-              <li><a href="routes.html">Маршруты</a></li>
-              <li><a href="logging.html"> Журналирование</a></li>
-              <li><a href="managing.html"> Управление сервисами</a></li>
-            </ul>
-          </details>
-        </li>
-        <li>
-          <details>
-            <summary>Сервис</summary>
-            <ul>
-              <li><a href="log.html"> Журнал</a></li>
-              <li><a href="firmware update.html"> Обновление прошивки</a></li>
-              <li><a href="import.html"> Импорт конфигурации</a></li>
-              <li><a href="export.html"> Экспорт конфигурации</a></li>
-              <li><a href="factory configuration.html"> Заводская конфигурация</a></li>
-              <li><a href="password.html"> Изменение пароля</a></li>
-            </ul>
-          </details>
-        </li>
-        <li><a href="saving settings.html"> Сохранить настройки</a></li>
-        <li><a href="restart.html"> Перезапуск</a></li>
-        <li><a href="information.html"> Информация</a></li>
-      </ul></div>
+    <?php require "blocks/menu.php" ?>
     </div>
 
     <div id="midle_panel" class="bblock">
