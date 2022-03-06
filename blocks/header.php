@@ -6,7 +6,7 @@
               </div>
               <div class="user">
                 <a>Вы вошли как admin</a>
-                <li><a href="blocks/wmodal.php">Выйти</a></li>
+                <li><a href="wmodal.php">Выйти</a></li>
               </div>
               <div class="tel">
                 <li><a>Контакты:</a></li>

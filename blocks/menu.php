@@ -1,7 +1,7 @@
 <div id="menu">   
                 <ul>
                     <li><a href=main.php>Главная</a></li>
-                    <li><details>
+                    <li><details open>
                       <summary>Базовая настройка</summary>
                         <ul>
                             <li><a href="net-interface.php">Сетевой интерфейс</a></li>
@@ -14,7 +14,7 @@
                     </details>
                     </li>
                     <li>
-                      <details>
+                      <details open>
                       <summary>Сервис</summary>
                         <ul>
                             <li><a href="log.php"> Журнал</a></li>
